@@ -1,0 +1,8 @@
+.myimage {
+    width: 250px;
+	height: 450px;
+	position: relative;
+	bottom: 190px;
+	left: 450px;
+}
+.

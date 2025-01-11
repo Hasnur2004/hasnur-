@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="vieowport" content="widht=device-widht, initial-scale=1.0">
+	<title>Cek Kelulusan</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 20px;
+			text-align: center;
+		}
+		input, button {
+			padding: 10px;
+			margin: 5px;
+			font-size:16px;
+		}
+		 result {
+			margin-top:20px;
+			font-size: 18px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+
+	<h1>Cek Kelulusan</h1>
+	<input type="number" id="nilai" placeholder="Masukkan nilai" />
+	<button onclick="cekkelulusan()">Cek</button>
+	
+	<div class="result" id="result"></div>
+	
+	<script>
+		function cekkelulusan() {
+			// Mengambil nilai dari input
+			var nilai = document.getElementById('nilai').value;
+			
+			// Mengecek apakah nilai >= 60
+			if (nilai >= 60) {
+				document.getElementById('result').innerText = "Lulus";
+				document.getElementById('result').style.color = "green";
+			}else{
+				document.getElementById('result').innerText = "Tidak Lulus";
+				document.getElementById('result').style.color = "red";
+			}
+		}
+	</script>
+</body>
+</html>
